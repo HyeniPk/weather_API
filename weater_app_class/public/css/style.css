@@ -1,0 +1,181 @@
+body {
+    margin: 0;
+    font-family: 'poppins','serif';
+    background: skyblue;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+h1,h3 {
+    font-weight: 500;
+}
+
+.weather-container {
+    min-height: 100vh;
+    background-image: url(../images/day/cloudy.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: #fafafa;
+    position: relative;
+    transition: 0.3s;
+    opacity: 1;
+}
+
+.weather-container::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 0;
+
+}
+
+.weather-board{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 4rem 2rem 3rem 2rem;
+    z-index: 1;
+}
+
+.container>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.city-name {
+    text-align: center;
+}
+
+.city-time, .temp, .weather {
+    margin: 0 1rem;
+}
+
+.temp {
+    font-size: 3rem;
+    margin: 1rem;
+    text-align: center;
+}
+
+.weather img {
+    display: block;
+    margin: 1rem auto;
+}
+
+.condition {
+    display: flex;
+    justify-content: center;
+
+}
+
+.panel {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    z-index:1;
+}
+
+.panel form {
+    width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.panel .search {
+    width: 33%;
+    padding: 0.5rem 2rem;
+    background: transparent;
+    border-bottom: 3px solid #fafafa !important;;
+    border: none;
+    color: white;
+    margin-bottom: 2rem;
+    outline: none;
+    font-size: 40px;
+    text-align: center;
+    -webkit-appearance: none;
+}
+
+.search::placeholder{
+    color: #fafafa;
+    opacity: 0.5;
+}
+
+.submit{
+    padding: 0.5rem 2rem;
+    border-radius: 5px;
+    background: transparent;
+    border: 3px solid #fafafa;
+    color: #fafafa;
+    font-size: 20px;
+    letter-spacing: 0.3rem;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.submit:hover {
+    background-color: #fafafa;
+    color: #1e1e1e;
+
+}
+
+.panel ul {
+    padding: 0;
+    list-style: none;
+}
+
+.panel .cities {
+    display: flex;
+}
+
+.panel .cities .city {
+    margin: 0 2rem;
+    font-size:20px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.panel .information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.panel .information h3{
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 5px;
+}
+
+.panel .information li {
+    margin-bottom: 1rem;
+    letter-spacing: 5px;
+}
+
+
+

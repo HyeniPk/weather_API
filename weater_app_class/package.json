@@ -1,0 +1,16 @@
+{
+  "name": "hyeeun_park",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "lite-server --baseDir=\"public\" "
+  },
+  "author": "Hyeeun_Park",
+  "license": "private",
+  "devDependencies": {
+    "lite-server": "^2.6.1"
+  },
+  "dependencies": {
+    "node": "^19.6.0"
+  }
+}

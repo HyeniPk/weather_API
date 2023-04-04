@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="./css/style.css" />
+      <title>Weather App</title>
+</head>
+<body>
+      <div class="weather-container">
+            <div class="weather-board">
+                  <!--weather information-->
+                  <div class="container">
+                        <h1 class="title"> Weather web app</h1>
+                        <div>
+
+                              <h3 class="temp">15&#176;</h3>
+                              <div class="city-time">
+                                    <h1 class="city-name">Toronto </h1>
+                                    <small>
+                                          <span class="time"> 00:00 </span>
+                                          <span class="date"> Thursday Feb 09 2023</span>
+                                    </small>
+                              </div>
+                              <div class="weather">
+                                    <img src="./icons/day/112.png" class="icon" alt="icon" width="50" height="50">
+                                    <span class="condition"> Sunny</span>
+                              </div>
+
+                        </div>
+                  </div>
+                  <!--weather panel-->
+                  <div class="panel">
+                        <form id="locationInput">
+                              <input type="text" class="search" placeholder="search location"></input>
+                              <button type="submit" class="submit"> search </button>
+                        </form>
+
+                        <ul class="cities">
+                              <li class="city"> Toronto</li>
+                              <li class="city"> Los Angeles </li>
+                              <li class="city"> Seoul</li>
+                        </ul>
+                        <ul class="information">
+                              <h3> * Weather Information * </h3>
+                              <li>
+                                    <span> Cloudy: </span>
+                                    <span class="cloud"> 0% </span>
+                              </li>
+
+                              <li>
+                                    <span> Humidity: </span>
+                                    <span class="humidity"> 0% </span>
+                              </li>
+                              <li>
+                                    <span> Wind: </span>
+                                    <span class="wind"> 0% </span>
+                              </li>
+                        </ul>
+
+                  </div>
+
+            </div>
+      </div>
+      <script src="./js/app.js" defer></script>
+
+</body>
+</html>
